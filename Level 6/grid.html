@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height:208px;
+            width:208px;
+            background-color:aqua;
+            display: grid;
+            grid-template-columns: 100px;
+            grid-template-rows: 100px;       
+        }
+        #b1{
+            background-color: red;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            border: 2px solid black;
+            margin: 1px;
+        }
+        #b2{
+            grid-column: 2/2;
+            grid-row: 1/2;
+            background-color: green;
+            border: 2px solid black;
+            margin: 1px;
+        }
+        #b3{
+            grid-column: 1/2;
+            grid-row: 2/2;
+            background-color:brown;
+            border: 2px solid black;
+            margin: 1px;
+        }
+        #b4{
+            grid-column: 2/2;
+            grid-row: 2/2;
+            background-color:rgb(203, 87, 167);
+            border: 2px solid black;
+            margin: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="b1">Grid1</div>
+        <div id="b2">Grid2</div>
+        <div id="b3">Grid3</div>
+        <div id="b4">Grid4</div>
+    </div>
+</body>
+</html>

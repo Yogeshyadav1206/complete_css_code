@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class </title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .btn2{
+            height: 40px;
+            width: 70px;
+            position: relative;
+            top:50px;
+            left:450px;
+            background-color: green;
+            box-sizing: content-box;
+            transition: all;
+            transition-duration: 0s;
+            transition-timing-function: ease-in;
+            transition-delay: 0;
+        }
+        #b:hover{
+            transform: translate(20px,20px);
+        }
+        .btn{
+            height: 100px;
+            width:100px;
+            background-color:aqua;
+            border: 3px solid black;
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+            left: 100px;
+            margin:20px;
+            transition: all;
+            transition-duration:0s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+        }
+        #btn1:hover{
+           translate: 50px;
+        } 
+        #btn2:hover{
+            background-color: red;
+            translate: 50px 50px;
+        }
+        #btn3:hover{
+            background-color: green;
+            translate: 50px 50px 50px;
+        }
+        #btn4:hover{
+            background-color: brown;
+            transform: rotate(270deg);
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="btn" id="btn1">Transform</div>
+    <div class="btn" id="btn2">Transform</div>
+    <div class="btn" id="btn3">Transform</div>
+    <div class="btn" id="btn4">Transform</div>
+    <button class="btn2" id="b">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class </title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .btn2{
+            height: 40px;
+            width: 70px;
+            position: relative;
+            top:50px;
+            left:10px;
+            background-color: green;
+            box-sizing: content-box; 
+        }
+        @keyframes nonclick {
+            from{
+                left:10px;
+            }  
+            to{
+                left:10px;
+            }          
+        }
+        .btn2:hover{
+            animation-name: nonclick;
+            animation-duration: 10s; 
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn2" id="b">Click Me</button>
+</body>
+</html>

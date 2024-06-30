@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice </title>
+    <style>
+        .d{
+            height:25px;
+            width:90%;
+            background-color:azure;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .d1{
+            height:100%;
+            border-radius: 20px;
+            background-color: blue;
+            animation-name: progress;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+        @keyframes progress {
+           0%{width:0%}
+           80%{width:95%}
+           90%{width:90%}
+           100%{width:100%} 
+        }
+    </style>
+</head>
+<body>
+    <div class="d">
+        <div class="d1"></div>
+    </div>
+    
+</body>
+</html>

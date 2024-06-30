@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height:500px;
+            width:500px;
+            background-color:aqua;
+            display: flex;       
+        }
+        #b1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border:3px solid black;
+            margin:10px;
+            order: 3;
+        }
+        #b2{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border:3px solid black;
+            margin:10px;
+            order: 1;
+        }
+        #b3{
+            height: 200px;
+            width: 200px;
+            background-color:brown;
+            border:3px solid black;
+            margin:10px;
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="b1">Flex1</div>
+        <div id="b2">Flex2</div>
+        <div id="b3">FLex3</div>
+    </div>
+</body>
+</html>

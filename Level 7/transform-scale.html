@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class </title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .btn{
+            height: 100px;
+            width:100px;
+            background-color:aqua;
+            border: 3px solid black;
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+            left: 100px;
+            margin:20px;
+            transition: all;
+            transition-duration:1s;
+            transition-timing-function: ease-in;
+            transition-delay: 0s;
+        }
+        #btn1:hover{
+           transform: scale(2);
+        } 
+        #btn2:hover{
+            background-color: red;
+            transform: scale(3);
+        }
+        #btn3:hover{
+            background-color: green;
+            transform: scale(4);
+        }
+        #btn4:hover{
+            background-color: brown;
+            transform: scale(5);
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="btn" id="btn1">Transform</div>
+    <div class="btn" id="btn2">Transform</div>
+    <div class="btn" id="btn3">Transform</div>
+    <div class="btn" id="btn4">Transform</div>
+</body>
+</html>
